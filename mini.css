@@ -1,24 +1,23 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
-
 
 .navbar {
-	display: flex;
-	flex-flow: row nowrap;
-	/* justify-content: space-around; */
-    justify-content: flex-start;
-	position: relative;
-	width: 100%;
-	height: 60px;
-	border-bottom: 1px solid hsla(0, 0%, 100%, 0.2);
-	z-index: 1;
+  display: flex;
+  flex-flow: row nowrap;
+  /* justify-content: space-around; */
+  justify-content: flex-start;
+  position: relative;
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.2);
+  z-index: 1;
 }
 
 /*
@@ -29,13 +28,13 @@ html{
 	links don't get farther apart with large screen sizes
 */
 .container {
-	display: flex;
-	flex-flow: row nowrap;
-	width: 100%;
-	max-width: 1500px;
-	/* justify-content: space-around; */
-    justify-content: flex-start;
-	align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  max-width: 1500px;
+  /* justify-content: space-around; */
+  justify-content: flex-start;
+  align-items: center;
 }
 
 /*
@@ -43,21 +42,21 @@ html{
 */
 .left-container,
 .right-container {
-	display: flex;
-	flex-flow: row nowrap;
-	width: 900px; 
-	z-index: 1;
+  display: flex;
+  flex-flow: row nowrap;
+  width: 900px;
+  z-index: 1;
 }
 
 /*
 	So we can set them to their respective sides and maintain the space between them
 */
 .left-container {
-	justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .right-container {
-	justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 /*
@@ -66,31 +65,31 @@ html{
 */
 .nav-left,
 .nav-right {
-	display: flex;
-    margin-left: 100px;
-	flex-flow: row nowrap;
-	justify-content: space-around;
-	flex-basis: 600px;
-	align-items: center;
-	color: #fff;
+  display: flex;
+  margin-left: 100px;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  flex-basis: 600px;
+  align-items: center;
+  color: #fff;
 }
 
 @media only screen and (max-width: 600px) {
-    .nav-left {
-        flex-basis: 360px!important;
-        margin-left: 5px!important;
-    }
-    a{
-      font-size:15px!important;
-    }
-    #logo {
-        font-size: 20px!important;
-        font-weight: 600!important;
-        min-width: 110px!important;
-        margin-left: 5px!important;
-        letter-spacing: 0px!important;
-    }
+  .nav-left {
+    flex-basis: 360px !important;
+    margin-left: 5px !important;
   }
+  a {
+    font-size: 15px !important;
+  }
+  #logo {
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    min-width: 110px !important;
+    margin-left: 5px !important;
+    letter-spacing: 0px !important;
+  }
+}
 
 /*
 	Because we are extending the gradient color up into the navbar,
@@ -101,14 +100,14 @@ html{
 	Properly.
 */
 .hero {
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: center;
-	position: relative;
-	height: 80px;
-	margin-top: -90px;
-	z-index: 0;
-	font-family: sans-serif;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  position: relative;
+  height: 80px;
+  margin-top: -90px;
+  z-index: 0;
+  font-family: sans-serif;
 }
 
 /*
@@ -116,13 +115,13 @@ html{
 	particular html structure
 */
 .gradient {
-	background-image: linear-gradient(163deg,#270530 10%,#196d82 36%,#fff 70%);
-	width: 100%;
-	display: flex;
-	/* flex-flow: column nowrap; */
-	justify-content: flex-start;
-	align-items: center;
-	height: 100vh;
+  background-image: linear-gradient(163deg, #270530 10%, #196d82 36%, #fff 70%);
+  width: 100%;
+  display: flex;
+  /* flex-flow: column nowrap; */
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
 }
 
 /*
@@ -130,26 +129,26 @@ html{
 	So we need to use a generous margin to push the text back down.
 */
 .content {
-	color: hsla(0, 0%, 100%, 0.8);
-	/* margin-top: 150px; */
-	text-align: center;
+  color: hsla(0, 0%, 100%, 0.8);
+  /* margin-top: 150px; */
+  text-align: center;
 }
 
 button {
-	background-image: linear-gradient(163deg, #da52ff, #7e18ff);
-	border: none;
-	padding: 10px;
-	border-radius: 6px;
-	color: hsla(0, 0%, 100%, 0.9);
-	box-shadow: 2px 2px 4px 1px hsla(0, 0%, 0%, 0.7);
+  background-image: linear-gradient(163deg, #da52ff, #7e18ff);
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  color: hsla(0, 0%, 100%, 0.9);
+  box-shadow: 2px 2px 4px 1px hsla(0, 0%, 0%, 0.7);
 }
 
 button:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 button:focus {
-	outline: none;
+  outline: none;
 }
 
 /*
@@ -157,97 +156,111 @@ button:focus {
 	It affects the user feedback on a button press
 */
 button:active {
-	box-shadow: 1px 1px 2px 0 hsla(0, 0%, 0%, 0.5);
-	transform: translate3d(1px, 1px, 0);
+  box-shadow: 1px 1px 2px 0 hsla(0, 0%, 0%, 0.5);
+  transform: translate3d(1px, 1px, 0);
 }
 
 a {
-	text-decoration: none;
-	font-family: sans-serif;
-	color: hsla(0, 0%, 100%, 0.7);
+  text-decoration: none;
+  font-family: sans-serif;
+  color: hsla(0, 0%, 100%, 0.7);
 }
 
 a:hover {
-	color: #fff;
+  color: #fff;
 }
 
 ul {
-	list-style: none;
+  list-style: none;
 }
 
 body {
-	padding: 0;
-	margin: 0;
-    font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
 }
 
 #logo {
-    display: flex;
-    align-items: center;
-    font-size: 26px;
-    font-weight: 600;
-    min-width: 170px;
-    margin-left: 10px;
-    color: rgb(28, 162, 76);
-    letter-spacing: 1px;
-    }
-.clear{
-    clear:both;
+  display: flex;
+  align-items: center;
+  font-size: 26px;
+  font-weight: 600;
+  min-width: 170px;
+  margin-left: 10px;
+  color: rgb(28, 162, 76);
+  letter-spacing: 1px;
 }
-h1{
-    font-size: 2.8rem;
+.clear {
+  clear: both;
 }
-h2{
-    font-size: 8rem;
-    padding: 5rem 0rem; 
-    color: rgb(28, 162, 76);
+h1 {
+  font-size: 2.8rem;
 }
-a{
-    color: white;
-    text-decoration: none;
-    font-size: 2.4rem;
+h2 {
+  font-size: 8rem;
+  padding: 5rem 0rem;
+  color: rgb(28, 162, 76);
 }
-h3{
-    font-size: 3.6rem;
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 2.4rem;
 }
-button{
-    font-size: 1.8rem;
+h3 {
+  font-size: 3.6rem;
+}
+button {
+  font-size: 1.8rem;
 }
 
-.hero-section{
-    background-image: url("Thecover.jpg");
-    height: 80rem;
-    background-position: center;
-    background-size: cover;
-    text-align: center;
+.hero-section {
+  background-image: url("Thecover.jpg");
+  height: 80rem;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
 
-    padding-top: 15rem;
-    text-shadow: 3px 3px 30px black;
+  padding-top: 15rem;
+  text-shadow: 3px 3px 30px black;
 }
-#The_h3{
-    color: rgb(28, 162, 76);
+#The_h3 {
+  color: rgb(28, 162, 76);
 }
-p{
-    width: 50%;
-    font-size: 2rem;
+p {
+  width: 50%;
+  font-size: 2rem;
+  background: #74ebd5;
+  background: -webkit-linear-gradient(to right, #acd6e5, #74ebd5);
+  background: linear-gradient(to right, #acb6e5, #74ebd5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.about-section{
-    text-align: center;
-    
+.about-section {
+  text-align: center;
 }
 #about {
-	padding: 40px;
-	text-align: center;
+  padding: 40px;
+  text-align: center;
 }
 
 #about p {
-	max-width: 600px;
-	margin: auto;
+  max-width: 600px;
+  margin: auto;
 }
-hr{
-    height: 8rem;
-    border-width: 0;
+hr {
+  height: 8rem;
+  border-width: 0;
 }
-#about iframe{
-    margin: 1.5rem;
+#about iframe {
+  margin: 1.5rem;
+}
+
+li {
+  padding-left: 16px;
+  padding-right: 16x;
+}
+.not_white{
+  color: purple;
 }

@@ -4,6 +4,13 @@
   margin: 0;
   padding: 0;
   font-family: "Otomanopee One", sans-serif;
+  background: #74ebd5;
+  background: -webkit-linear-gradient(to right, #acd6e5, #74ebd5);
+  background: linear-gradient(to right, #acb6e5, #74ebd5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 h3 {
@@ -27,29 +34,32 @@ h3 {
 .buttons {
   display: inline-block;
 }
-.container{
+.container {
   background: cadetblue;
   width: 80%;
   height: 80%;
   margin: auto;
 }
-html,body{
+html,
+body {
   height: 100%;
 }
-.box1,.box2,.box3{
+.box1,
+.box2,
+.box3 {
   width: 20%;
   height: 20%;
-  background:rgb(164,52,255);
+  background: rgb(164, 52, 255);
 }
-.box2{
-  background: rgb(63,255,223);
+.box2 {
+  background: rgb(63, 255, 223);
 }
-.box3{
-  background: rgb(29,29,29);
+.box3 {
+  background: rgb(29, 29, 29);
 }
-.box1{
+.box1 {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
