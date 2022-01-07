@@ -1,5 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Otomanopee One", sans-serif;
+  font-size: 1.5rem;
+}
+body {
+  height: 100vh;
+  background: #74ebd5;
+  background: -webkit-linear-gradient(to right, #acd6e5, #74ebd5);
+  background: linear-gradient(to right, #acb6e5, #74ebd5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+a {
+  color: black;
+}
+.middle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
